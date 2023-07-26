@@ -127,6 +127,9 @@ from http import client
 import pandas as pd
 import streamlit as st
 from streamlit.connections import ExperimentalBaseConnection
+# import duckdb
+import sys
+sys.path.append('/path/to/duckdb/module')
 import duckdb
 
 class DuckDBConnection(ExperimentalBaseConnection[duckdb.DuckDBPyConnection]):
